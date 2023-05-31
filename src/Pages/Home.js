@@ -12,7 +12,7 @@ function Home() {
       <Header />
         <Devmir />
         <div id="content">
-          <h1> Ademir Ferreira Da Silva Junior </h1>
+          <h1 id="complete_name" > Ademir Ferreira Da Silva Junior </h1>
           <div id="profile">
             <img src={icon} alt="devmir_icon" id="icon"></img>
             <p> Brasileiro! vivendo atualmente em: <br/> Almenara, Minas gerais.</p>
@@ -29,9 +29,11 @@ function Home() {
                   <ul>
                     <li> Git </li>
                     <li> CSS </li>
-                    <li> Posicionamento em CSS </li>
-                    <li> HTML Semântico  </li>
-                    <li> JavaScript </li>
+                    <li> Python </li>
+                    <li> POO </li>
+                    <li> Algoritmos </li>
+                    <li> Context API  </li>
+                    
                   </ul>
                   <ul>
                     <li> JavaScript </li>
@@ -44,13 +46,7 @@ function Home() {
                     <li> React Js </li>
                     <li> Redux </li>
                     <li> RTL </li>
-                    <li> Context API  </li>
                     <li> Docker </li>
-                  </ul>
-                  <ul>
-                    <li> Python </li>
-                    <li> POO </li>
-                    <li> Algoritmos </li>
                     <li> Raspagem de dados  </li>
                     <li> Padrões de projetos </li>
                   </ul>
