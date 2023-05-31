@@ -1,4 +1,7 @@
 import React from 'react';
+import insta from '../imgs/Instagram.png';
+import tel from '../imgs/tel.png';
+import tt from '../imgs/twitter.png';
 
 function handleClick() {
     
@@ -12,34 +15,39 @@ function Footer() {
   return (
     <footer>
       <button
-        onClick={handleClick()}
+        className='mediaButton'
+        onClick={() => handleClick()}
         onMouseOver={handleMouse}     
       >
         <img src="" alt="Linkedin" />
       </button>
       <button
-        onClick={handleClick()}
+        className='mediaButton'
+        onClick={() => handleClick()}
         onMouseOver={handleMouse}     
       >
         <img src="" alt="Email" />
       </button>
       <button
-        onClick={handleClick()}
+        className='mediaButton'
+        onClick={() => handleClick()}
         onMouseOver={handleMouse} 
       >
-        <img src="" alt="Tel" />
+        <img src={tel} alt="Tel" width="100%"/>
       </button>
       <button
-        onClick={handleClick()}
+        className='mediaButton'
+        onClick={() => handleClick()}
         onMouseOver={handleMouse} 
       >
-        <img src="" alt="Twitter" />
+        <img src={tt} alt="Twitter" width="100%"/>
       </button>
       <button
-        onClick={handleClick()}
+        className='mediaButton'
+        onClick={() => handleClick()}
         onMouseOver={handleMouse}  
       >
-        <img src="" alt="Instagram" />
+        <img src={insta} alt="Instagram" width="100%"/>
       </button>
         </footer>   
     )

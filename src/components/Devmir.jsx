@@ -9,8 +9,8 @@ function Devmir() {
   return (
     <div className='devmir'>
       <img src={logo} alt="devmir_logo" id="logo"></img>
-      <button id="about"
-        onClick={handleClick()}   
+      <button type="button" id="about"
+        onClick={() => handleClick()}   
       > Sobre Mim
       </button>
     </div>   
