@@ -22,7 +22,7 @@
         top: -2%;
         right: 0;
         width: 100%;
-        height: 7%;
+        height: 8%;
         display: flex;
         justify-content: space-evenly;
     }
@@ -42,9 +42,9 @@
         display: flex;
         align-items: center;
         left: 0;
-        top: 5%;
+        top: 6%;
         position: fixed;
-        height: 15%;
+        height: 14%;
         width: 100%; 
         flex-direction: column;
     }
@@ -81,6 +81,10 @@
 
     #complete_name {
         height: 2%;
+        align-self: center;
+        display: flex;
+        flex-wrap: nowrap;
+        text-size-adjust: inherit;
     }
     
     #profile {
