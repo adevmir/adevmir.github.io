@@ -2,7 +2,9 @@
 
 @media (max-width: 768px) {
     body {
-        // background-image: url("./imgs/fundo.jpg");
+        background-image: url("./imgs/fundo.jpg");
+        background-position: 60% 4%;
+        background-size: 400%;
         display: flex;
         flex-direction: column;
         align-items: center; /* centraliza verticalmente os elementos */
@@ -19,10 +21,9 @@
     header {
         background-color: rgba(60,125,60,0.8);
         position: fixed;
-        top: -2%;
         right: 0;
         width: 100%;
-        height: 8%;
+        height: 6%;
         display: flex;
         justify-content: space-evenly;
     }
@@ -40,18 +41,18 @@
     .devmir {
         background-color: rgba(250,250,250,0.8);
         display: flex;
+        justify-content: space-evenly;
         align-items: center;
         left: 0;
         top: 6%;
         position: fixed;
-        height: 14%;
+        height: 20%;
         width: 100%; 
         flex-direction: column;
     }
 
     #logo {
-        height: 100%;
-        align-self: center;
+        width: 70%;
     }
     
     #about {
@@ -60,6 +61,8 @@
         height: 30%;
         border-radius: 40px;
         border: 0;
+        position: relative;
+        top: -25px;
         font-family: 'Genos', serif;
         font-weight: bold;
         color: aliceblue;
@@ -69,14 +72,14 @@
     #content {
         background-color: rgba(60,125,60,0.8);
         position: fixed;
-        top: 27%;
+        top: 26%;
         right: 0;
         width: 100%;
-        height: 65%;
+        height: 66%;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+        justify-content:space-evenly;
+        align-items: flex-start;
     }
 
     #complete_name {
@@ -107,7 +110,7 @@
         bottom: 0;
         width: 100%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         padding: 0;
         margin: 0;
     }
@@ -125,7 +128,8 @@
 @media (min-width: 769px) {
 
 body {
-    // background-image: url("./imgs/fundo.jpg");
+    background-image: url("./imgs/fundo.jpg");
+    background-size:cover;
     margin: 0;
     padding: 0;
     font-family: 'Genos', serif;
@@ -142,7 +146,7 @@ body {
 }
 
 header {
-    background-color: rgba(60,125,60,0.8);
+    background-color: rgba(60,125,60,0.9);
     position: fixed;
     top: 0;
     right: 0;
@@ -150,11 +154,11 @@ header {
     height: 8%;
     display: flex;
     justify-content: space-evenly;
-    text-align: justify;
+    align-items: baseline;
 }
 
 footer {
-    background-color: rgba(60,125,60,0.8);
+    background-color: rgba(60,125,60,0.9);
     position: fixed;
     right: 0;
     width: 60%;
@@ -164,7 +168,7 @@ footer {
     bottom: 0;
 }
 .devmir {
-    background-color: rgba(250,250,250,0.8);
+    background-color: rgba(250,250,250,0.7);
     display: flex;
     align-items: center;
     position: fixed;
@@ -188,7 +192,7 @@ footer {
 }
 
 #content {
-    background-color: rgba(60,125,60,0.8);
+    background-color: rgba(60,125,60,0.9);
     position: fixed;
     top: 8%;
     right: 0;
@@ -198,7 +202,7 @@ footer {
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content:space-between;
     align-items: center;
 }
 
@@ -237,17 +241,19 @@ footer {
 }
 
 .link {
-    height: 5%;
+    height: 100%;
     text-decoration: none;
     color: aliceblue;
     font-size: x-large;
-    align-self: flex-start;
+    display: flex;
+    align-items: center;
 }
 
 #skills_select {
-    width: 100%;
+    width:70%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 h2.off {
@@ -256,13 +262,62 @@ h2.off {
 li.java { list-style: none;}
 
 #skillButton {
-    background: none;
-    border: none;
-    padding: 0;
+    width: 40%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     font-family: inherit;
     font-size:x-large;
     font-weight: 900;
     color: inherit;
+    transition: all 0.3s;
+    position: relative;
+    background-color: rgba(250,250,250,0.2);
+    border: none;
+  }
+
+  #skillButton span {
+    transition: all 0.3s;
+  }
+
+  #skillButton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255,255,255,0.9);
+    border-bottom-color: rgba(255,255,255,0.9);
+    transform: scale(0.1, 1);
+  }
+
+  #skillButton:hover span {
+    letter-spacing: 2px;
+  }
+  #skillButton:hover::before {
+    opacity: 1; 
+    transform: scale(1, 1); 
+  }
+
+  #skillButton::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
   }
 
 .mediaButton {

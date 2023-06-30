@@ -47,8 +47,8 @@ function Home() {
                     <li> Redux </li>
                     <li> RTL </li>
                     <li> Docker </li>
-                    <li> Raspagem de dados  </li>
-                    <li> Padrões de projetos </li>
+                    <li> Web Scraping </li>
+                    <li> Design patterns </li>
                   </ul>
                 </>
       ) : (

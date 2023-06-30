@@ -5,13 +5,13 @@ function Header() {
   return (
     <header>
       <Link to="/" className="link">
-        <p>INICIO</p>
+        INICIO
       </Link>
       <Link to="/projects" className="link">
-        <p>PROJETOS</p>
+        PROJETOS
       </Link>
       <Link to="/contact" className="link">
-        <p>CONTATO</p>
+        CONTATO
       </Link>
     </header>
   );
