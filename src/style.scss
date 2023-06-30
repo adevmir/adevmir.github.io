@@ -87,14 +87,13 @@
         align-self: center;
         display: flex;
         flex-wrap: nowrap;
-        text-size-adjust: inherit;
+        font-size:x-large;
     }
     
     #profile {
         width: 100%;
         height: 30%;
         text-align: center;
-        height: 30%;
     }
     
     #icon {
@@ -113,6 +112,7 @@
         justify-content: space-around;
         padding: 0;
         margin: 0;
+        font-size: small;
     }
     
     #skills_title {
@@ -262,7 +262,7 @@ h2.off {
 li.java { list-style: none;}
 
 #skillButton {
-    width: 40%;
+    width: 48%;
     height: 40%;
     display: flex;
     justify-content: center;
