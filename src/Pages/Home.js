@@ -12,43 +12,33 @@ function Home() {
       <Header />
         <Devmir />
         <div id="content">
-          <h1 id="complete_name" > Ademir Ferreira Da Silva Junior </h1>
-          <div id="profile">
+            <h1 id="complete_name" > Ademir Ferreira Da Silva Junior </h1>
             <img src={icon} alt="devmir_icon" id="icon"></img>
-            <p> Brasileiro! vivendo atualmente em: <br/> Almenara, Minas gerais.</p>
-          </div>
           <div id="skills_title">
             <div id="skills_select">
               <button type="button" id="skillButton" onClick={() => setIsSkills(true)}>Hard Skills:</button>
-              <h2>|</h2>
               <button type="button" id="skillButton" onClick={() => setIsSkills(false)}>Soft Skills:</button>
             </div>
             <div id="skills">
               {isSkills ? (
                 <>
                   <ul>
-                    <li> Git </li>
-                    <li> CSS </li>
-                    <li> Python </li>
-                    <li> POO </li>
-                    <li> Algoritmos </li>
-                    <li> Context API  </li>
-                    
-                  </ul>
-                  <ul>
                     <li> JavaScript </li>
-                    <li className="java"> - Dom </li>
-                    <li className="java"> - Web Storage </li>
-                    <li className="java"> - ES6 </li>
-                    <li className="java"> - Responsividade </li>
+                    <li> CSS </li>
+                    <li> Git </li>
+                    <li> Context API </li>
+                    <li> Algoritmos </li>
+                    <li> Python  </li>
+                    <li> NodeJS </li>
                   </ul>
                   <ul>
-                    <li> React Js </li>
+                    <li> React </li>
                     <li> Redux </li>
                     <li> RTL </li>
                     <li> Docker </li>
                     <li> Web Scraping </li>
-                    <li> Design patterns </li>
+                    <li> Testes Unitários </li>
+                    <li> MySQL // MongoDB </li>
                   </ul>
                 </>
       ) : (

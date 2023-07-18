@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../imgs/Devmir.png';
+import logo from '../imgs/devmir.png';
 
 function handleClick() {
     
